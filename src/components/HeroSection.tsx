@@ -366,52 +366,6 @@ export default function HeroSection() {
             </div>
           </div>
         </section>
-        <section className="bg-background relative z-10 py-16">
-          <div className="m-auto max-w-5xl flex flex-col items-center mt-16 px-6">
-            <motion.h2
-              className="text-center text-2xl font-medium"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-            >
-              Trusted by innovative companies worldwide.
-            </motion.h2>
-            <motion.div
-              className="mx-auto mt-20 flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 sm:gap-y-12"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
-              variants={containerVariants}
-            >
-              {[
-                { src: "https://html.tailus.io/blocks/customers/nvidia.svg", alt: "Nvidia Logo", height: "20", className: "h-5" },
-                { src: "https://html.tailus.io/blocks/customers/column.svg", alt: "Column Logo", height: "16", className: "h-4" },
-                { src: "https://html.tailus.io/blocks/customers/github.svg", alt: "GitHub Logo", height: "16", className: "h-4" },
-                { src: "https://html.tailus.io/blocks/customers/nike.svg", alt: "Nike Logo", height: "20", className: "h-5" },
-                { src: "https://html.tailus.io/blocks/customers/laravel.svg", alt: "Laravel Logo", height: "16", className: "h-4" },
-                { src: "https://html.tailus.io/blocks/customers/lilly.svg", alt: "Lilly Logo", height: "28", className: "h-7" },
-                { src: "https://html.tailus.io/blocks/customers/lemonsqueezy.svg", alt: "Lemon Squeezy Logo", height: "20", className: "h-5" },
-                { src: "https://html.tailus.io/blocks/customers/openai.svg", alt: "OpenAI Logo", height: "24", className: "h-6" },
-                { src: "https://html.tailus.io/blocks/customers/tailwindcss.svg", alt: "Tailwind CSS Logo", height: "16", className: "h-4" },
-                { src: "https://html.tailus.io/blocks/customers/vercel.svg", alt: "Vercel Logo", height: "20", className: "h-5" },
-                { src: "https://html.tailus.io/blocks/customers/zapier.svg", alt: "Zapier Logo", height: "20", className: "h-5" },
-              ].map((logo, index) => (
-                <motion.img
-                  key={index}
-                  className={`${logo.className} w-fit dark:invert cursor-pointer`}
-                  src={logo.src}
-                  alt={logo.alt}
-                  height={logo.height}
-                  width="auto"
-                  custom={index}
-                  variants={logoVariants}
-                  whileHover="hover"
-                />
-              ))}
-            </motion.div>
-          </div>
-        </section>
       </main>
     </>
   );
